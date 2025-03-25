@@ -13,7 +13,7 @@ class Student {
     Student(string name, string first_name) {
         _name = name;
         _first_name = first_name;
-        cout << "Parametrisierter Konstruktor Student: " << first_name << " " << _name << endl;
+        cout << "Parametrisierter Konstruktor Student: " << first_name << " " << name << endl;
        
     }
 
@@ -28,18 +28,27 @@ class Student {
         return _first_name;
     }
 
-    void print(){
-        cout << "print() ohne Parameter; Student: " << _first_name << " " << _name << endl;
-    }
-    
-    void print(bool newline){
-        cout << "print() mit Parameter; Student: " << _first_name << " " << _name;
-        if(newline){
-            cout << endl;
-        }
-    }
+    void print();
+    void print(bool newline);
 
 };
+
+
+/*Aufgabenteil missverstanden: Print-Methoden sollten AUSSERHALB verwendet werden.
+    Vorgehensweise: print-Methoden und klasse Student mit dem scope-resolution-Operator*/
+
+void Student::print(){ // Zugriff auf die deklarierten Funktionen und den Namen
+    cout << "print() ohne Parameter; Student: " << get_first_name() << " " << get_name() << endl;
+}
+
+void Student::print(bool newline){
+    cout << "print() mit Parameter; Student: " << get_first_name() << " " << get_name();
+    if(newline){
+        cout << endl;
+    }
+}
+
+
 
 
 // Klasse Employee
@@ -101,4 +110,3 @@ int main(int argc, char *argv[])
     delete p_stud_mustermann;
     return 0;
 }
-
