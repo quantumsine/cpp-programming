@@ -1,0 +1,18 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "C:/Users/bindo/C++ Programming/cmake-build-debug",
+	"dir-cur-src" : "C:/Users/bindo/C++ Programming",
+	"dir-top-bld" : "C:/Users/bindo/C++ Programming/cmake-build-debug",
+	"dir-top-src" : "C:/Users/bindo/C++ Programming",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/bindo/C++ Programming/cmake-build-debug/CMakeFiles/CMake_labor.dir"
+}

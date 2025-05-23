@@ -1,0 +1,3 @@
+C:/Users/bindo/C++ Programming/build/CMakeFiles/CMake_labor.dir
+C:/Users/bindo/C++ Programming/build/CMakeFiles/edit_cache.dir
+C:/Users/bindo/C++ Programming/build/CMakeFiles/rebuild_cache.dir
