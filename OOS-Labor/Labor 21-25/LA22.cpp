@@ -9,12 +9,12 @@ int main(int argc, char* argv[]) {
     cout << " Nr Oct  Hex String  Fixed     Scientific " << endl;
     for (int k = 1; k < 11; k++)
     {
-        cout << right << setw(3) << dec << noshowpos  << k;
-        cout << right << setw(3) << "0" << oct << k;
-        cout << " 0x"  << hex << k << " ";
-        cout << " " <<  string(k % 5 + 1, '*') << string(6 - (k % 5 + 1), '+')  << " ";
-        cout << " " << fixed << right << showpos << setfill(' ') << setw(9) << setprecision(3) << internal << d;
-        cout << " " << scientific << uppercase << setprecision(3) << d;
+        cout << right << noshowpos << dec << setw(3)  << k;
+        cout << right << nouppercase << setw(4) << showbase << oct << k;
+        cout << hex << setw(5) << k << " ";
+        cout <<  left << string(k % 5 + 1, '*') << string(6 - (k % 5 + 1), '+') << '+'  << " ";
+        cout << setw(9) <<setfill(' ')<< fixed<< internal << setprecision(3)<< showpos<<  d;
+        cout << noshowpos<<uppercase<< right<<scientific<<setw(11) << d;
         d = d*-2;
 
         cout << endl;
